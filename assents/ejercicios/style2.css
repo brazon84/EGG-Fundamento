@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.medio{
+    margin: 30px;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+ border: 2px solid blueviolet;
+ border-radius: 8px;
+    background-color: lightsalmon;
+}
+.interno{
+    width: 390px;
+    height: 190px;
+    background-color: lightpink;
+    border: 1px solid;
+    border-radius: 8px;
+}
+.externo{
+    background-color: lightseagreen;
+    width: 500px;
+    height: 300px;
+    border: 2px solid;
+    margin: 10px;
+    border-radius: .5rem;
+
+}
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.interno:hover{
+    background-color: lightgreen;
+    transform:scale(1.3);
+    opacity: 0.5;
+}
