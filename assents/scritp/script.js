@@ -4,7 +4,7 @@ saludar.innerHTML = hola;
 document.body.appendChild(saludar);
 */
 function showAlert() {
-  alert("¡hola, esta es una alerta desde JavaScript");
+  swal("¡hola, esta es una alerta desde JavaScript");
 }
 
 document.getElementById("title").innerHTML="Bienvenidos a mi primer Website!"
@@ -29,8 +29,10 @@ function validateForm() {
   const emailInput = document.getElementById('email');
   const email = emailInput.value;
   if (!validateEmail(email)) {
-    alert('Por favor ingrese un correo electrónico válido.');
+    swal('Por favor ingrese un correo electrónico válido.');
   } else {
-    alert('Correo electrónico enviado correctamente.');
+    swal({title:'Correo electrónico enviado correctamente.',
+    icon:'success',
+  });
   }
 }
